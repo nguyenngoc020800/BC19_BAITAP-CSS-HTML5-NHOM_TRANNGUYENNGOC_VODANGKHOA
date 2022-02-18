@@ -21,6 +21,78 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+        <path fill-opacity="1">
+          <animate attributeName="d" dur="20000ms" repeatCount="indefinite" values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+            M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;"></animate>
+        </path>
+      </svg> -->
+      <header>
+          <div class="w1k2px container-fluid">
+              <div class="header__content">
+                <nav class="navbar navbar-expand-lg navbar-light  w-100">
+                    <a class="navbar-brand logo__brand" href="#"> 
+                        <div class="brand">
+                            <i class="fas fa-align-right"></i>
+                        </div>
+                        <div class="logo__brand--text mb0">
+                            <h1>Corp Vision</h1>
+                            <p>Vision to your Future</p>
+                        </div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <!-- <span class="navbar-toggler-icon"></span> -->
+                      <i class="fas fa-bars"></i>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SERVICES</a>
+                          </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                            PAGES
+                            <i class="fa fa-angle-down"></i>
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">BLOG POST</a>
+                            <a class="dropdown-item" href="#">404 PAGE</a>
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a class="dropdown-item" href="#">LANDING PAGES</a>
+                            <a class="dropdown-item" href="#">ELEMENTS PAGE</a>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                          </li>
+                      </ul>
+                      <div class="header__search-darktheme">
+                          <div class="header__search">
+                            <i class="fa fa-search"></i>
+                          </div>
+                          <div id="darktheme" class="header__darktheme ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+                            </svg>
+                            <i class="las la-sun"></i>
+                         </div>
+                      </div>
+                      <!-- <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form> -->
+                    </div>
+                  </nav>
+              </div>
+          </div>
+      </header>
     <section class="solution">
         <div class="w1k2px container-fluid container-md">
             <div class="row align-items-center">
@@ -150,11 +222,11 @@
             <div class="w1k2px container-fluid">
                 <div class="row">
                     <div class="col-xs-12 col-md-6 col-lg-4 footer__second--item">
-                        <a href="#" class="footer__brand">
+                        <a href="#" class="logo__brand">
                             <div class="brand">
                                 <i class="fas fa-align-right"></i>
                             </div>
-                            <div class="footer__brand--text">
+                            <div class="logo__brand--text">
                                 <h1>Corp Vision</h1>
                                 <p>Vision to your Future</p>
                             </div>
@@ -202,6 +274,8 @@
         </div>
         <div class="footer__last ">© 2022 Corp Vision All Rights Reserved | WordPress Theme by <span class="footer__hover">W3Layouts.</span> </div>
     </footer>
+    <!-- js -->
+    <script src="./js/index.js"></script>
     <!-- jquery link-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- slick -->
