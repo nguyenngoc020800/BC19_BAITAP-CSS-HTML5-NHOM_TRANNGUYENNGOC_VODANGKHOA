@@ -27,50 +27,52 @@
             M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;"></animate>
         </path>
       </svg> -->
-      <header>
+      <div id="number" class="d-none">1</div>
+      <header id="header">
           <div class="w1k2px container-fluid">
               <div class="header__content">
-                <nav class="navbar navbar-expand-lg navbar-light  w-100">
+                <nav class="navbar navbar-expand-lg navbar-light  ">
                     <a class="navbar-brand logo__brand" href="#"> 
                         <div class="brand">
                             <i class="fas fa-align-right"></i>
                         </div>
                         <div class="logo__brand--text mb0">
-                            <h1>Corp Vision</h1>
-                            <p>Vision to your Future</p>
+                            <h1 class="navlogoscroll titlecolor">Corp Vision</h1>
+                            <p class="navlogoscroll fontcolor">Vision to your Future</p>
                         </div>
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    
+                    <button id="togglerButton" class="navbar-toggler fas fa-bars " style="color:#fff;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <!-- <span class="navbar-toggler-icon"></span> -->
-                      <i class="fas fa-bars"></i>
+                      <!-- <i class="fas fa-bars"></i> -->
                     </button>
                   
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                          <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+                          <a  class="nav-link navlinkactivescroll fontcolor" href="#">HOME<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">ABOUT</a>
+                          <a class="nav-link navlinkscroll foncolor" href="#">ABOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SERVICES</a>
+                            <a class="nav-link  navlinkscroll fontcolor" href="#">SERVICES</a>
                           </li>
                         <li class="nav-item dropdown">
-                          <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                          <a class="nav-link  navlinkscroll fontcolor" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
                             PAGES
-                            <i class="fa fa-angle-down"></i>
+                            <i class="fa fa-angle-down "></i>
                           </a>
                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">BLOG POST</a>
-                            <a class="dropdown-item" href="#">404 PAGE</a>
+                            <a class="dropdown-item fontcolor" href="#">BLOG POST</a>
+                            <a class="dropdown-item fontcolor" href="#">404 PAGE</a>
                             <!-- <div class="dropdown-divider"></div> -->
-                            <a class="dropdown-item" href="#">LANDING PAGES</a>
-                            <a class="dropdown-item" href="#">ELEMENTS PAGE</a>
+                            <a class="dropdown-item fontcolor" href="#">LANDING PAGES</a>
+                            <a class="dropdown-item fontcolor" href="#">ELEMENTS PAGE</a>
                           </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
+                            <a class="nav-link navlinkscroll fontcolor " href="#">CONTACT</a>
                           </li>
                       </ul>
                       <div class="header__search-darktheme">
@@ -78,10 +80,10 @@
                             <i class="fa fa-search"></i>
                           </div>
                           <div id="darktheme" class="header__darktheme ">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
-                                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+                            <svg  xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                                <path class="navlinkscroll fontcolor" d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
                             </svg>
-                            <i class="las la-sun"></i>
+                            <i class="las la-sun "></i>
                          </div>
                       </div>
                       <!-- <form class="form-inline my-2 my-lg-0">
@@ -93,7 +95,7 @@
               </div>
           </div>
       </header>
-    <section class="solution">
+    <section class="solution bg1">
         <div class="w1k2px container-fluid container-md">
             <div class="row align-items-center">
                 <div class=" col-lg-6 col-12 solution__img mb-ms-3">
@@ -101,43 +103,43 @@
                 </div>
                 <div class="col-lg-6 col-12 solution__content">
                     <div class="title">
-                        <h4>YOUR SUCCESS IS OUR SUCCESS</h4>
-                        <h1>Web design, marketing & SEO solutions that get results</h1>
+                        <h4 class="fontcolor">YOUR SUCCESS IS OUR SUCCESS</h4>
+                        <h1 class="titlecolor">Web design, marketing & SEO solutions that get results</h1>
                     </div>
                     <div class="solution__figure">
                         <div class="solution__figure--item">
                             <div class="solution__figure--text" style="--percent:80%">
-                                <h6>Marketing</h6>
-                                <p>80%</p>
+                                <h6 class="titlecolor">Marketing</h6>
+                                <p class="titlecolor">80%</p>
                             </div>
-                            <div class="solution__figure--decr ư" style="--percent:80%">
+                            <div class="solution__figure--decr bg2" style="--percent:80%">
                                 <div class="solution__solieu number1" style="--percent:80%"></div>
                             </div>
                         </div>
                         <div class="solution__figure--item">
                             <div class="solution__figure--text">
-                                <h6>Responsive Web design</h6>
-                                <p style="padding-right: 27px;">95%</p>
+                                <h6 class="titlecolor">Responsive Web design</h6>
+                                <p class="titlecolor" style="padding-right: 27px;">95%</p>
                             </div>
-                            <div class="solution__figure--decr ư" style="--percent:95%">
+                            <div class="solution__figure--decr bg2" style="--percent:95%">
                                 <div class="solution__solieu number2" style="--percent:95%"></div>
                             </div>
                         </div>
                         <div class="solution__figure--item">
                             <div class="solution__figure--text" style="--percent:60%">
-                                <h6>Analytics</h6>
-                                <p>60%</p>
+                                <h6 class="titlecolor">Analytics</h6>
+                                <p class="titlecolor">60%</p>
                             </div>
-                            <div class="solution__figure--decr ư" style="--percent:60%">
+                            <div class="solution__figure--decr bg2" style="--percent:60%">
                                 <div class="solution__solieu number3" style="--percent:60%"></div>
                             </div>
                         </div>
                         <div class="solution__figure--item">
                             <div class="solution__figure--text" style="--percent:85%">
-                                <h6>Web Development</h6>
-                                <p>85%</p>
+                                <h6 class="titlecolor" >Web Development</h6>
+                                <p class="titlecolor" >85%</p>
                             </div>
-                            <div class="solution__figure--decr ư" style="--percent:80%">
+                            <div class="solution__figure--decr bg2" style="--percent:80%">
                                 <div class="solution__solieu number4" style="--percent:85%"></div>
                             </div>
                         </div>
@@ -146,58 +148,58 @@
             </div>
         </div>
     </section>
-    <section class="feedback">
+    <section class="feedback bg2">
         <div class="w1k2px container-fluid">
             <div class="title title__feedback">
-                <h4>HAPPY CLIENTS FEEDBACK</h4>
-                <h1>Reviews and Testimonials</h1>
+                <h4 class="fontcolor">HAPPY CLIENTS FEEDBACK</h4>
+                <h1 class="titlecolor" >Reviews and Testimonials</h1>
             </div>
             <div class="feedback__content single-item">
                 <div class="feedback__items">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nobis quis sed ducimus voluptates rem aut, unde recusandae dignissimos quo. Nulla minima aperiam nam laborum deserunt veniam deleniti, corrupti sit?</p>
+                    <p class="fontcolor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nobis quis sed ducimus voluptates rem aut, unde recusandae dignissimos quo. Nulla minima aperiam nam laborum deserunt veniam deleniti, corrupti sit?</p>
                     <div class="feedback__infor">
                         <div class="feedback__img">
                             <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/team3.jpg" alt="">
                         </div>
                         <div class="feedback__name">
-                            <h4>Loy Linderson</h4>
-                            <p>Student</p>
+                            <h4 class="titlecolor">Loy Linderson</h4>
+                            <p class="fontcolor">Student</p>
                         </div>
                     </div>
                 </div>
                 <div class="feedback__items">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nobis quis sed ducimus voluptates rem aut, unde recusandae dignissimos quo. Nulla minima aperiam nam laborum deserunt veniam deleniti, corrupti sit?</p>
+                    <p class="fontcolor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nobis quis sed ducimus voluptates rem aut, unde recusandae dignissimos quo. Nulla minima aperiam nam laborum deserunt veniam deleniti, corrupti sit?</p>
                     <div class="feedback__infor">
                         <div class="feedback__img">
                             <img src="./img/team1.jpg" alt="">
                         </div>
                         <div class="feedback__name">
-                            <h4>John Wilson</h4>
-                            <p>Student</p>
+                            <h4 class="titlecolor">John Wilson</h4>
+                            <p class="fontcolor">Student</p>
                         </div>
                     </div>
                 </div>
                 <div class="feedback__items">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quibusdam sunt repudiandae autem veniam, ipsum tempore velit commodi voluptatem illo doloribus unde expedita hic eveniet doloremque sit natus laboriosam vitae.</p>
+                    <p class="fontcolor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quibusdam sunt repudiandae autem veniam, ipsum tempore velit commodi voluptatem illo doloribus unde expedita hic eveniet doloremque sit natus laboriosam vitae.</p>
                     <div class="feedback__infor">
                         <div class="feedback__img">
                             <img src="./img/team2.jpg" alt="">
                         </div>
                         <div class="feedback__name">
-                            <h4>Julia Sakura</h4>
-                            <p>Student</p>
+                            <h4 class="titlecolor">Julia Sakura</h4>
+                            <p class="fontcolor">Student</p>
                         </div>
                     </div>
                 </div>
                 <div class="feedback__items">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nobis quis sed ducimus voluptates rem aut, unde recusandae dignissimos quo. Nulla minima aperiam nam laborum deserunt veniam deleniti, corrupti sit?</p>
+                    <p class="fontcolor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nobis quis sed ducimus voluptates rem aut, unde recusandae dignissimos quo. Nulla minima aperiam nam laborum deserunt veniam deleniti, corrupti sit?</p>
                     <div class="feedback__infor">
                         <div class="feedback__img">
                             <img src="./img/team4.jpg" alt="">
                         </div>
                         <div class="feedback__name">
-                            <h4>Smith Johnson</h4>
-                            <p>Student</p>
+                            <h4 class="titlecolor">Smith Johnson</h4>
+                            <p class="titlecolor">Student</p>
                         </div>
                     </div>
                 </div>
@@ -282,7 +284,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
         $('.single-item').slick({
-            dots: true
+            dots: true,
+            arrows: false
         });
     </script>
     <!-- bootstrap -->
