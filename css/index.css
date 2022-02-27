@@ -66,17 +66,17 @@ html >body{
 
 /* class for scroll nav */
 .navscrollcolor{
-    color: #3f3a64 !important;
-    opacity: .7 !important;
+    color: #3f3a64 ;
+    opacity: .7 ;
     fill: #3f3a64;
 }
 .navscrolllogo{
-    color: #3f3a64 !important;
-    opacity: .9 !important;
+    color: #3f3a64 ;
+    opacity: .9 ;
 }
 .navscrollcolor__actived{
-    color: #008030 !important;
-    opacity: 1 !important;
+    color: #008030 ;
+    opacity: 1 ;
 }
 /* class for scroll nav */
 
@@ -109,6 +109,9 @@ header{
     width: 100%;
     z-index: 9999;
     border-bottom: 1px solid rgba(231, 231, 231, 0.18);
+}
+#header.scroll0{
+    background-color: transparent !important;
 }
 
 .mb0 p{
@@ -157,6 +160,7 @@ header{
 
 .header__darktheme.tg i{
     display: block;
+    color: #fff !important;
 }
 
 .header__darktheme.tg svg{
@@ -182,10 +186,18 @@ header{
     font-weight: 600;
 }
 
+.navbar-light .navbar-nav a.nav-link.noscrollactive{
+    color: #fff !important;
+    opacity: .8 !important;
+    transition: all ease-in .1s !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+}
 .navbar-light .navbar-nav .active>a.nav-link{
     opacity: 1;
     color: #fff;
 }
+
 .navbar-light .navbar-nav a.nav-link:hover{
     opacity: 1;
     color: #fff;
