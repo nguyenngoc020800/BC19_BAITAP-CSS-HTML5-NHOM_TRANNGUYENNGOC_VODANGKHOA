@@ -1,8 +1,8 @@
 $(document).ready(function () {
-  $(".slick-track").slick({
+  $(".slider-btl").slick({
     dots: true,
     infinite: true,
-    speed: 800,
+    speed: 2000,
     fade: true,
     cssEase: "linear",
     slidesToShow: 1,
@@ -15,13 +15,18 @@ $(document).ready(function () {
   });
 });
 
+// $(".feedback__content").slick({
+//   dots: true,
+//   arrows: false,
+// });
+
 let isAutoClick = true;
 function handleClick(type) {
   window.onclick = (e) => {
     isAutoClick = false;
   };
   const slickAcctive = document.getElementsByClassName(
-    "slick-active slick-slide"
+    "slick-active slick-slide s2"
   );
   let index = +slickAcctive[0].getAttribute("index");
   if (type === "next") {
@@ -55,24 +60,22 @@ const autoClick = setInterval(() => {
     document
       .getElementById("slick-arrow-next")
       .dispatchEvent(new Event("click"));
-  }else{
-    clearInterval(autoClick)
+  } else {
+    clearInterval(autoClick);
   }
 }, 2000);
-
 
 var modal = document.getElementById("modal");
 var img = document.getElementById("img-modal");
 var modalImg = document.getElementById("img-modal");
 var caption = document.getElementById("caption-modal");
-img.onclick = function() {
+img.onclick = function () {
   modal.style.display = "block";
   modalImg.src = this.src;
   caption.innerHTML = this.alt;
-}
+};
 
 var span = document.getElementsByClassName("close")[0];
-span.onclick = function() {
-  modal.style.display = "none"
-
-}
+span.onclick = function () {
+  modal.style.display = "none";
+};

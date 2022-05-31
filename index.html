@@ -8,6 +8,11 @@
     <!-- slick -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <!-- swiper -->
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -100,12 +105,12 @@
       </header>
 
      <!-- Slider -->
-    <div class="banner-wrap">
-        <div class="banner-slider slick-initialized slick-slider">
+     <div class="banner-wrap">
+        <div class="banner-slider slick-initialized slick-sliader">
             
             <div class="slick-list draggable" style="height: 800px;">
-                <div class="slick-track" style="opacity: 1; width: 570;">
-                    <div class="slick-slide" data-slick-index="0" tabindex="-1">
+                <div class="slick-track slider-btl" style="opacity: 1; width: 570;">
+                    <div class="slick-slide s2" data-slick-index="0" tabindex="-1">
                         <div>
                             <div class="banner-slide bg1" style="width: 100%; display: inline-block;">
                                 <style>
@@ -135,7 +140,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slick-slide" data-slick-index="1" tabindex="-1">
+                    <div class="slick-slide s2" data-slick-index="1" tabindex="-1">
                         <div>
                             <div class="banner-slide bg2" style="width: 100%; display: inline-block;">
                                 <style>
@@ -165,7 +170,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slick-slide" data-slick-index="2" tabindex="-1">
+                    <div class="slick-slide s2" data-slick-index="2" tabindex="-1">
                         <div>
                             <div class="banner-slide bg3" style="width: 100%; display: inline-block;">
                                 <style>
@@ -195,7 +200,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slick-slide" data-slick-index="3" tabindex="-1">
+                    <div class="slick-slide s2" data-slick-index="3" tabindex="-1">
                         <div>
                             <div class="banner-slide bg4" style="width: 100%; display: inline-block;">
                                 <style>
@@ -237,7 +242,7 @@
               </path>
             </svg>
           </div>
-    </div>
+    </div> -->
     <!-- End of slider -->
     <!-- About us -->
     <section class="w3l-homeblock1" id="about">
@@ -503,7 +508,7 @@
         </div>
     </section>
     <!-- End of Gallery -->
-    <section class="solution bg1">
+    <section class="solution">
         <div class="w1k2px container-fluid container-md">
             <div class="row align-items-center">
                 <div class=" col-lg-6 col-12 solution__img mb-ms-3">
@@ -556,14 +561,14 @@
             </div>
         </div>
     </section>
-    <section class="feedback bg2">
+    <section class="feedback ">
         <div class="w1k2px container-fluid">
             <div class="title title__feedback">
                 <h4 class="fontcolor">HAPPY CLIENTS FEEDBACK</h4>
                 <h1 class="titlecolor" >Reviews and Testimonials</h1>
             </div>
-            <div class="feedback__content single-item">
-                <div class="feedback__items">
+            <div class="feedback__content ">
+                <div class="feedback__items ">
                     <p class="fontcolor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nobis quis sed ducimus voluptates rem aut, unde recusandae dignissimos quo. Nulla minima aperiam nam laborum deserunt veniam deleniti, corrupti sit?</p>
                     <div class="feedback__infor">
                         <div class="feedback__img">
@@ -575,7 +580,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="feedback__items">
+                <div class="feedback__items ">
                     <p class="fontcolor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nobis quis sed ducimus voluptates rem aut, unde recusandae dignissimos quo. Nulla minima aperiam nam laborum deserunt veniam deleniti, corrupti sit?</p>
                     <div class="feedback__infor">
                         <div class="feedback__img">
@@ -587,7 +592,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="feedback__items">
+                <div class="feedback__items ">
                     <p class="fontcolor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quibusdam sunt repudiandae autem veniam, ipsum tempore velit commodi voluptatem illo doloribus unde expedita hic eveniet doloremque sit natus laboriosam vitae.</p>
                     <div class="feedback__infor">
                         <div class="feedback__img">
@@ -599,7 +604,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="feedback__items">
+                <div class="feedback__items ">
                     <p class="fontcolor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nobis quis sed ducimus voluptates rem aut, unde recusandae dignissimos quo. Nulla minima aperiam nam laborum deserunt veniam deleniti, corrupti sit?</p>
                     <div class="feedback__infor">
                         <div class="feedback__img">
@@ -612,6 +617,7 @@
                     </div>
                 </div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
     <!-- Blog Posts -->
@@ -814,23 +820,27 @@
         </div>
         <div class="footer__last ">© 2022 Corp Vision All Rights Reserved | WordPress Theme by <span class="footer__hover">W3Layouts.</span> </div>
     </footer>
-    <script>
-        $('.single-item').slick({
-            dots: true,
-            arrows: false
-        });
-    </script>
     <!-- Font Awsome -->
     <script src="https://kit.fontawesome.com/5efe0bd96b.js" crossorigin="anonymous"></script>
+    <!-- jquery link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- slick -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <!-- jquery link-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- js -->
     <script src="./js/index.js"></script>
     <script src="./js/index-khoa.js"></script>
-
+    <script>
+        $('.feedback__content').slick({
+   infinite: true,
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   autoplay: true,
+   speed: 2000,
+ });
+     </script>
 </body>
 </html>

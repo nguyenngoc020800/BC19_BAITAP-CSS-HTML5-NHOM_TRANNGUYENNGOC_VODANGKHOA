@@ -54,12 +54,14 @@ html >body{
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 0;
+    color: #fff;
 }
 .logo__brand--text p{
     font-size: 14px;
     font-weight: 600;
     opacity: .9;
     padding-left: 3px;
+    color: #fff;
 }
 /* main */
 /* header */
@@ -682,5 +684,8 @@ footer{
     .footer__second{
         padding: 30px 0;
     }
+}
+.slick-slide{
+    opacity: 1 !important;
 }
 /* footer */
